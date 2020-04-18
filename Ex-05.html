@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function scores()
+    {
+        let num1 = +prompt("Nhap Diem Thanh phan cua ban: ");
+        let num2 = +prompt("Nhap Diem Giua ky cua ban: ");
+        let num3 = +prompt("Nhap Diem Cuoi ky cua ban: ");
+        let checkpoints = num1*0.1 +num2*0.3 +num3*0.6;
+        return checkpoints;
+    }
+    points = scores();
+    if (points >=9 )
+    {
+        alert("Loai Gioi!!!");
+    }
+    else if (points >=7.5 )
+    {
+        alert("Loai Kha!!!");
+    }
+    else if (points >= 6)
+    {
+        alert("Loai Trung Binh!!!");
+    }
+    else if (points >= 4.5)
+    {
+        alert("Loai Yeu!!!");
+    }
+    else
+    {
+        alert("Dot vai! Hoc lai di!!!")
+    }
+</script>
+</body>
+</html>
